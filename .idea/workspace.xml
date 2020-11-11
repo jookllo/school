@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/contract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/inventory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/orders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/receipts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/reports.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/user_details.php" afterDir="false" />
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Removed search from navbar and updated the admin panel.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/registeruser.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/registeruser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/registeruser.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +47,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605045016014</updated>
-      <workItem from="1605045017140" duration="4426000" />
+      <workItem from="1605045017140" duration="6141000" />
     </task>
+    <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
+      <created>1605052813327</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605052813327</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Navigation details have been updated with links to the files." />
+    <MESSAGE value="Removed search from navbar and updated the admin panel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed search from navbar and updated the admin panel." />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="38" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605051894410">
@@ -81,6 +88,10 @@
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="478" y="302" width="399" height="156" key="NewPhpFileDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049077404" />
+    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605052838424">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1605052838424" />
     <state x="346" y="47" width="672" height="678" key="search.everywhere.popup" timestamp="1605051092034">
       <screen x="0" y="27" width="1366" height="699" />
     </state>

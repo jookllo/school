@@ -14,7 +14,56 @@
     <body class="sb-nav-fixed">
        <?php include 'navbar.php';?>
             <!-- Navbar-->
-            
+       <div id="layoutSidenav_content">
+           <main>
+               <div class="container-fluid">
+                   <h1 class="mt-4">User Addition</h1>
+                   <ol class="breadcrumb mb-4">
+                       <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                       <li class="breadcrumb-item active">Tables</li>
+                   </ol>
+                   <div class="card mb-4">
+
+                   </div>
+                   <div class="card mb-4">
+                       <div class="card-header">
+                           <i class="fas fa-table mr-1"></i>
+                           User Control Panel
+                       </div>
+                       <div class="card-body">
+                           <div class="table-responsive">
+                               <table class="table table-bordered" id="dataTable" cellspacing="0">
+                                   <thead>
+                                   <tr>
+                                       <th>Username</th>
+                                       <th>Email</th>
+                                       <th>Password</th>
+                                       <th>Action</th>
+                                   </tr>
+                                   </thead>
+                                   <tfoot>
+                                   <tr>
+                                       <th>Username</th>
+                                       <th>Email</th>
+                                       <th>Password</th>
+                                       <th>Action</th>
+                                   </tr>
+                                   </tfoot>
+                                   <tbody>
+                                   <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><button class="btn btn-primary" href="index.php">Submit</button>
+                                           <button class="btn btn-success" href="index.php">Edit</button>
+                                       </td>
+                                   </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   </div>
+               </div>
                         </div>
                     </div>
                 </footer>
