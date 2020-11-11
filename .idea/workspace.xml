@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="" />
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/contract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/inventory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/orders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/receipts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/reports.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/registeruser.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/registeruser.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1k7I4zsjpRM9Vml2lIc3OC9F9GN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,6 +42,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605045016014</updated>
-      <workItem from="1605045017140" duration="1433000" />
+      <workItem from="1605045017140" duration="4426000" />
     </task>
     <servers />
   </component>
@@ -47,6 +61,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="278" y="38" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605051894410">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="278" y="38" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.699@0.27.1366.699" timestamp="1605051894410" />
+    <state x="416" y="125" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605052339519">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="416" y="125" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.699@0.27.1366.699" timestamp="1605052339519" />
     <state x="524" y="276" width="317" height="207" key="Github.ShareDialog" timestamp="1605049351666">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
@@ -59,5 +81,9 @@
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="478" y="302" width="399" height="156" key="NewPhpFileDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049077404" />
+    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup" timestamp="1605051092034">
+      <screen x="0" y="27" width="1366" height="699" />
+    </state>
+    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup/0.27.1366.699@0.27.1366.699" timestamp="1605051092034" />
   </component>
 </project>
