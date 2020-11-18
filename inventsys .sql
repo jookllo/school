@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 11, 2020 at 12:05 AM
+-- Generation Time: Nov 18, 2020 at 01:00 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.3.22
 
@@ -20,6 +20,63 @@ SET time_zone = "+00:00";
 --
 -- Database: `inventsys`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contract`
+--
+
+CREATE TABLE `contract` (
+  `company_name` varchar(60) NOT NULL,
+  `contract_amount` int(8) NOT NULL,
+  `date_created` date NOT NULL,
+  `materials` varchar(10) NOT NULL,
+  `contact` varchar(10) NOT NULL,
+  `expense_amount` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `expenses`
+--
+
+CREATE TABLE `expenses` (
+  `name` varchar(10) NOT NULL,
+  `quantity` int(5) NOT NULL,
+  `pin_no` int(5) NOT NULL,
+  `date` date NOT NULL,
+  `amount` int(8) NOT NULL,
+  `expense_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `inventory`
+--
+
+CREATE TABLE `inventory` (
+  `product_id` int(10) NOT NULL,
+  `quantity` int(10) NOT NULL,
+  `product_name` varchar(50) NOT NULL,
+  `price` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `order_no` int(10) DEFAULT NULL,
+  `email` varchar(60) NOT NULL,
+  `order_type` varchar(50) NOT NULL,
+  `amount` int(20) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -55,6 +112,18 @@ INSERT INTO `users` (`id`, `uname`, `email`, `pass`) VALUES
 --
 
 --
+-- Indexes for table `expenses`
+--
+ALTER TABLE `expenses`
+  ADD PRIMARY KEY (`expense_id`);
+
+--
+-- Indexes for table `inventory`
+--
+ALTER TABLE `inventory`
+  ADD PRIMARY KEY (`product_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -65,6 +134,18 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `expenses`
+--
+ALTER TABLE `expenses`
+  MODIFY `expense_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `inventory`
+--
+ALTER TABLE `inventory`
+  MODIFY `product_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -13,12 +13,18 @@
 </head>
 <body class="sb-nav-fixed">
 <?php include 'navbar.php';?>
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <h1 class="mt-4">Reports</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                <li class="breadcrumb-item active">Reports</li>
+            </ol>
+            <div class="card mb-4">
 
-</div>
-</div>
-</footer>
-</div>
-</div>
+            </div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>

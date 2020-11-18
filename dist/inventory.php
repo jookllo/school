@@ -14,12 +14,40 @@
 <body class="sb-nav-fixed">
 <?php include 'navbar.php';?>
 <!-- Navbar-->
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <h1 class="mt-4">Inventory</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                <li class="breadcrumb-item active">Inventory</li>
+            </ol>
+            <div class="card mb-4">
+
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-table mr-1"></i>
+                    Inventory
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                        <form method="post" action="">
+                            <p>Name:</p>
+                            <input class="form-control" type="text"/><br>
+                            <p>Quantity:</p>
+                            <input class="form-control" type="number"/><br>
+                            <p>Price:</p>
+                            <input class="form-control" type="number"/><br>
+                            <input type="submit" class="btn btn-success" value="Submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 </div>
-</div>
-</footer>
-</div>
-</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>

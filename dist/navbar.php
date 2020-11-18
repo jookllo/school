@@ -36,10 +36,10 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                         Reports
                     </a>
-                    <a class="nav-link" href="user_details.php">
+                   <!--<a class="nav-link" href="user_details.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                         User Management
-                    </a>
+                    </a>-->
 
                     <div class="sb-sidenav-menu-heading">Workshop Manager</div>
                     <a class="nav-link" href="inventory.php">

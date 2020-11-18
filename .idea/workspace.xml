@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Removed search from navbar and updated the admin panel.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contract.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/expenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/expenses.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/inventory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/registeruser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/receipts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/reports.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605045016014</updated>
-      <workItem from="1605045017140" duration="6141000" />
+      <workItem from="1605045017140" duration="6447000" />
+      <workItem from="1605349868069" duration="609000" />
+      <workItem from="1605459828845" duration="3943000" />
+      <workItem from="1605652100621" duration="5041000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -56,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605052813327</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed search from navbar and updated the admin panel.">
+      <created>1605054429093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605054429093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,10 +103,10 @@
       <screen x="0" y="27" width="1366" height="699" />
     </state>
     <state x="478" y="302" width="399" height="156" key="NewPhpFileDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049077404" />
-    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605052838424">
+    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605054435147">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
-    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1605052838424" />
+    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1605054435147" />
     <state x="346" y="47" width="672" height="678" key="search.everywhere.popup" timestamp="1605051092034">
       <screen x="0" y="27" width="1366" height="699" />
     </state>
