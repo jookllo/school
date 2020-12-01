@@ -4,7 +4,7 @@ server with default setting (user 'root' with no password) */
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "inventsys";
+$db = "school";
 $link = mysqli_connect($host, $user, $pass, $db);
  
 // Check connection

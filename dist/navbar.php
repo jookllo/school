@@ -1,5 +1,5 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.php">Inventory System</a>
+    <a class="navbar-brand" href="index.php">Student Reg. System</a>
     <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -22,7 +22,7 @@
 </nav>
 <div id="layoutSidenav">
     <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
             <div class="sb-sidenav-menu">
                 <div class="nav">
                     <div class="sb-sidenav-menu-heading">Administrator</div>
@@ -31,37 +31,36 @@
                         Dashboard
                     </a>
 
-                    <div class="sb-sidenav-menu-heading">C.E.O</div>
-                    <a class="nav-link" href="reports.php">
+                    <div class="sb-sidenav-menu-heading">Teacher</div>
+                    <a class="nav-link" href="students_registered.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
-                        Reports
+                        Students Registered
                     </a>
-                   <!--<a class="nav-link" href="user_details.php">
+                   <a class="nav-link" href="lesson_register.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                        User Management
-                    </a>-->
+                        Lesson Register
+                    </a>
+                    <a class="nav-link" href="subject_report.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                        Subjects Reports
+                    </a>
 
-                    <div class="sb-sidenav-menu-heading">Workshop Manager</div>
-                    <a class="nav-link" href="inventory.php">
+                    <div class="sb-sidenav-menu-heading">Student</div>
+                    <a class="nav-link" href="student_portal.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
-                        Inventory
+                        Student Portal
                     </a>
-                    <a class="nav-link" href="orders.php">
+                    <a class="nav-link" href="unit_marks_attendance.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>
-                        Orders
+                        Unit Marks and Attendance
                     </a>
-                    <a class="nav-link" href="receipts.php">
+                    <a class="nav-link" href="school_fees.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
-                        Sales Receipts
+                        School Fees
                     </a>
-                    <div class="sb-sidenav-menu-heading">Finance Manager</div>
-                    <a class="nav-link" href="expenses.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-credit-card"></i></div>
-                        Expense
-                    </a>
-                    <a class="nav-link" href="contract.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-file"></i></div>
-                        Contract
+                    <a class="nav-link" href="unit_registration.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
+                        Unit Registration
                     </a>
                 </div>
             </div>
