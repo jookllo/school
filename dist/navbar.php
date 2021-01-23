@@ -12,9 +12,7 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">Settings</a>
-                <a class="dropdown-item" href="#">Activity Log</a>
-                <div class="dropdown-divider"></div>
+
                 <a class="dropdown-item" href="login.php">Logout</a>
             </div>
         </li>
@@ -32,6 +30,10 @@
                     </a>
 
                     <div class="sb-sidenav-menu-heading">Teacher</div>
+                    <a class="nav-link" href="teacher_portal.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                        Portal
+                    </a>
                     <a class="nav-link" href="students_registered.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                         Students Registered
@@ -52,11 +54,7 @@
                     </a>
                     <a class="nav-link" href="unit_marks_attendance.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>
-                        Unit Marks and Attendance
-                    </a>
-                    <a class="nav-link" href="school_fees.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-calculator"></i></div>
-                        School Fees
+                        Attendance
                     </a>
                     <a class="nav-link" href="unit_registration.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>

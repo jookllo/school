@@ -2,19 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Removed search from navbar and updated the admin panel.">
-      <change afterPath="$PROJECT_DIR$/dist/subject_report.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/forgotpass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/functions/resetpass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/newpass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/student_portal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/teacher_portal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/conn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/contract.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/expenses.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/adduser.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/adduser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/unit_registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/layout-static.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lesson_register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lesson_register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/unit_marks_attendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/receipts.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/school_fees.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/students_registered.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lesson_register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventsys .sql" beforeDir="false" afterPath="$PROJECT_DIR$/school.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/401.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/401.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pages/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pages/layout-sidenav-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pages/layout-sidenav-light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/school_fees.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/school_fees.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/students_registered.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/students_registered.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/subject_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/subject_report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/unit_marks_attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/unit_marks_attendance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/unit_registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/unit_registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/validation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +61,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\schoolregistration\dist" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\schoolregistration\dist\functions" />
+      <recent name="C:\xampp\htdocs\schoolregistration\dist" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +86,12 @@
       <workItem from="1606818313414" duration="1158000" />
       <workItem from="1606850105030" duration="376000" />
       <workItem from="1606850749736" duration="593000" />
-      <workItem from="1606856464986" duration="1845000" />
+      <workItem from="1606856464986" duration="2336000" />
+      <workItem from="1607505093700" duration="53000" />
+      <workItem from="1609237552381" duration="829000" />
+      <workItem from="1610615979342" duration="20000" />
+      <workItem from="1611158509506" duration="9590000" />
+      <workItem from="1611307723408" duration="754000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -90,44 +117,5 @@
     <MESSAGE value="Navigation details have been updated with links to the files." />
     <MESSAGE value="Removed search from navbar and updated the admin panel." />
     <option name="LAST_COMMIT_MESSAGE" value="Removed search from navbar and updated the admin panel." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="278" y="38" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605051894410">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="278" y="38" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.699@0.27.1366.699" timestamp="1605051894410" />
-    <state x="416" y="103" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606857181189">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="416" y="103" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1606857181189" />
-    <state x="416" y="125" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.699@0.27.1366.699" timestamp="1605052339519" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1606730382392">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1606730382392" />
-    <state x="524" y="276" width="317" height="207" key="Github.ShareDialog" timestamp="1605049351666">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="524" y="276" width="317" height="207" key="Github.ShareDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049351666" />
-    <state x="483" y="56" width="390" height="647" key="Github.UntrackedFilesDialog" timestamp="1605049556510">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="483" y="56" width="390" height="647" key="Github.UntrackedFilesDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049556510" />
-    <state x="478" y="302" width="399" height="156" key="NewPhpFileDialog" timestamp="1605049077404">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="478" y="302" width="399" height="156" key="NewPhpFileDialog/0.27.1366.699@0.27.1366.699" timestamp="1605049077404" />
-    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605054435147">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="278" y="112" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.699@0.27.1366.699" timestamp="1605054435147" />
-    <state x="500" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606858063463">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="500" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1606858063463" />
-    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup" timestamp="1605051092034">
-      <screen x="0" y="27" width="1366" height="699" />
-    </state>
-    <state x="346" y="47" width="672" height="678" key="search.everywhere.popup/0.27.1366.699@0.27.1366.699" timestamp="1605051092034" />
   </component>
 </project>

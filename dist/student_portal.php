@@ -17,35 +17,30 @@
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid">
-            <h1 class="mt-4">Inventory</h1>
+            <h1 class="mt-4">Student Portal</h1>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-                <li class="breadcrumb-item active">Inventory</li>
+                <li class="breadcrumb-item active">Student Portal</li>
             </ol>
             <div class="card mb-4">
 
             </div>
             <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fas fa-table mr-1"></i>
-                    Inventory
-                </div>
-                <div class="card-body">
-                    <div class="container">
-                        <form method="post" action="">
-                            <p>Name:</p>
-                            <input class="form-control" type="text"/><br>
-                            <p>Quantity:</p>
-                            <input class="form-control" type="number"/><br>
-                            <p>Price:</p>
-                            <input class="form-control" type="number"/><br>
-                            <input type="submit" class="btn btn-success" value="Submit" name="submit">
-                        </form>
+
+                    <div class="card-header">
+                        <i class="fas fa-table mr-1"></i>
+                        Student Details
                     </div>
+                    <div class="card-body">
+                        <div class="container">
+                                <p>Student Name:</p>
+                                <input class="form-control" name="pname" type="text"/><br>
+                                <p>Email:</p>
+                                <input class="form-control" name="quantity" type="number"/><br>
+                        </div>
                 </div>
             </div>
         </div>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
