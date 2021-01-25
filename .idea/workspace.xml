@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="Removed search from navbar and updated the admin panel.">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/forgotpass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/functions/resetpass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/newpass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/student_portal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/teacher_portal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/adduser.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/adduser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/layout-static.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lesson_register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lesson_register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pages/401.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/401.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pages/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pages/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pages/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pages/charts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pages/layout-sidenav-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pages/layout-sidenav-light.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/school_fees.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/school_fees.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/students_registered.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/students_registered.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/subject_report.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/subject_report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/tables.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/unit_marks_attendance.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/unit_marks_attendance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/unit_registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/unit_registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/dist/functions/validation.php" afterDir="false" />
-    </list>
+    <list default="true" id="aa5bd0d0-e5a4-4efb-92ef-76adb5cbeebb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +65,7 @@
       <workItem from="1610615979342" duration="20000" />
       <workItem from="1611158509506" duration="9590000" />
       <workItem from="1611307723408" duration="754000" />
+      <workItem from="1611416221392" duration="242000" />
     </task>
     <task id="LOCAL-00001" summary="Navigation details have been updated with links to the files.">
       <created>1605052813327</created>
@@ -107,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605054429093</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added various elements to the design and also a change in the database">
+      <created>1611416416113</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611416416113</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Navigation details have been updated with links to the files." />
     <MESSAGE value="Removed search from navbar and updated the admin panel." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed search from navbar and updated the admin panel." />
+    <MESSAGE value="Added various elements to the design and also a change in the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added various elements to the design and also a change in the database" />
   </component>
 </project>
