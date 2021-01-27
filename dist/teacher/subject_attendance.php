@@ -6,7 +6,8 @@ if(isset($_SESSION['email'])){
 }else{
     echo "<script>location.href='../teacher_login.php'</script>";
 }
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -120,7 +121,7 @@ if(isset($_SESSION['email'])){
                                     while($row = mysqli_fetch_array($result)){
 
                                         echo "<tr>";
-                                        echo "<td>". $row['student_id']."</td>";
+                                        echo "<td value>". $row['student_id']."</td>";
                                         echo "<td>". $row['student_name'] ."</td>";
                                         echo "<td>". $row['subid'] ."</td>";
 
@@ -144,7 +145,7 @@ if(isset($_SESSION['email'])){
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary" name="">Save changes</button>
                         </div>
                     </div>
                 </div>

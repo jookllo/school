@@ -33,6 +33,9 @@ if(isset($_SESSION['email'])){
                 <div class="card-header">
                     <i class="fas fa-table mr-1"></i>
                     Students Registered
+                    <form method="post" action="export_students.php">
+                        <input type="submit" class="btn btn-success" value="Export to Excel" style="float: right;" name="export">
+                    </form>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
