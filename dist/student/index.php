@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+session_start();
+$_SESSION['success'] = " <div class='alert alert-success alert-dismissible' role='alert'><a class='close' data-dismiss='alert' aria-label='close'>&times;</a>Welcome User</div>";
+if(isset($_SESSION['email'])){
+    echo "  ";
+}else{
+    echo "<script>location.href='../login.php'</script>";
+}
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -18,6 +26,7 @@
     <main>
         <div class="container-fluid">
             <h1 class="mt-4">Student Portal</h1>
+            <?php if(isset($_SESSION['success'])){ echo $_SESSION['success']; }?>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item"><a href="../admin/index.php">Dashboard</a></li>
                 <li class="breadcrumb-item active">Student Portal</li>

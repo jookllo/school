@@ -10,10 +10,10 @@
     <!-- Navbar-->
     <ul class="navbar-nav ml-auto ml-md-0">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+            <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
 
-                <a class="dropdown-item" href="login.php">Logout</a>
+                <a class="dropdown-item" href="logout.php">Logout</a>
             </div>
         </li>
     </ul>
@@ -33,19 +33,12 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                         Students Registered
                     </a>
-                   <a class="nav-link" href="lesson_register.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                        Lesson Register
-                    </a>
                     <a class="nav-link" href="subject_report.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                         Subjects Reports
                     </a>
                 </div>
             </div>
-            <div class="sb-sidenav-footer">
-                <div class="small">Logged in as:</div>
 
-            </div>
         </nav>
     </div>

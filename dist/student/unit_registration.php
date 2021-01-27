@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if(isset($_SESSION['email'])){
+    echo "  ";
+}else{
+    echo "<script>location.href='login.php'</script>";
+}
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />

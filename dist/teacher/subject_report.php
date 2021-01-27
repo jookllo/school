@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+session_start();
+$_SESSION['success'] = " <div class='alert alert-success alert-dismissible' role='alert'><a class='close' data-dismiss='alert' aria-label='close'>&times;</a>Welcome Teacher</div>";
+if(isset($_SESSION['email'])){
+    echo "  ";
+}else{
+    echo "<script>location.href='../teacher_login.php'</script>";
+}
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />

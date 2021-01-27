@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+session_start();
+$_SESSION['success'] = " <div class='alert alert-success alert-dismissible' role='alert'><a class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+ <a class='close' data-dismiss='alert' aria-label='close'>&times;</a>Welcome Administrator</div>";
+if(isset($_SESSION['uname'])){
+    echo "  ";
+}else{
+    echo "<script>location.href='login.php'</script>";
+}
+?><!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -24,104 +33,9 @@
                        <li class="breadcrumb-item active">Tables</li>
                    </ol>
 
-                   <div class="card mb-4">
+                       <?php if(isset($_SESSION['success'])){ echo $_SESSION['success']; }?>
 
-                   </div>
-                   <div class="card mb-4">
-                       <div class="card-header">
-                           <i class="fas fa-table mr-1"></i>
-                           Student and Teachers
-                       </div>
-                       <div class="card-body">
-                           <div class="table-responsive">
-                               <table class="table table-bordered" id="dataTable" cellspacing="0">
-                                   <thead>
-                                   <tr>
-                                       <th>Username</th>
-                                       <th>Email</th>
-                                       <th>Password</th>
-                                       <th>Usertype</th>
-                                       <th>Action</th>
-                                   </tr>
-                                   </thead>
-                                   <tfoot>
-                                   <tr>
-                                       <th>Username</th>
-                                       <th>Email</th>
-                                       <th>Password</th>
-                                       <th>Usertype</th>
-                                       <th>Action</th>
-                                   </tr>
-                                   </tfoot>
-                                   <tbody>
-                                   <tr>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <td></td>
-                                       <td>
-                                           <!-- Trigger the modal with a button -->
-                                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Register</button>
-                                           <button class="btn btn-success" href="index.php">Edit</button>
-                                           <!-- Modal -->
-                                           <div id="myModal" class="modal fade" role="dialog">
-                                               <div class="modal-dialog">
 
-                                                   <!-- Modal content-->
-                                                   <div class="modal-content">
-                                                       <div class="modal-header">
-                                                           <h4 class="modal-title">Add User</h4>
-                                                           <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                                                       </div>
-                                                       <div class="modal-body">
-                                                           <form action="/action_page.php">
-                                                               <div class="form-group">
-                                                                   <label for="name">First Name:</label>
-                                                                   <input type="text" class="form-control" id="fname" name="fname" required/>
-                                                               </div>
-                                                               <div class="form-group">
-                                                                   <label for="name">Last Name:</label>
-                                                                   <input type="text" class="form-control" id="lname" name="lname" required/>
-                                                               </div>
-                                                               <div class="form-group">
-                                                                   <label for="email">Email address:</label>
-                                                                   <input type="email" class="form-control" id="email" name="email"/>
-                                                               </div>
-                                                               <div class="form-group">
-                                                                   <label for="dob">Date of Birth:</label>
-                                                                   <input type="date" class="form-control" id="dob" name="dob"/>
-                                                               </div>
-                                                               <div class="form-group">
-                                                                   <label for="pwd">Password:</label>
-                                                                   <input type="password" class="form-control" id="pwd" name="pass"/>
-                                                               </div>
-                                                               <div class="form-group">
-                                                                   <label for="utype">User Type:</label>
-                                                                   <select name="utype" class="form-control">
-                                                                       <option value="1">1</option>
-                                                                       <option value="2">2</option>
-                                                                       <option value="3">3</option>
-                                                                   </select>
-                                                               </div>
-                                                               <button type="submit" class="btn btn-success" name="adduser">Submit</button>
-                                                           </form>
-                                                       </div>
-                                                       <div class="modal-footer">
-                                                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                       </div>
-                                                   </div>
-
-                                               </div>
-                                           </div><br/>
-
-                                       </td>
-                                   </tr>
-                                   </tbody>
-                               </table>
-                           </div>
-                       </div>
-                   </div>
                    <div class="card mb-4">
                        <div class="card-header">
                            <i class="fas fa-table mr-1"></i>
@@ -135,16 +49,16 @@
                                        <th>Subject Code</th>
                                        <th>Subject Name</th>
                                        <th>Time Offered</th>
-                                       <th>Day</th>
+                                       <th>Day Available</th>
                                        <th>Action</th>
                                    </tr>
                                    </thead>
                                    <tfoot>
                                    <tr>
-                                       <th>Username</th>
-                                       <th>Email</th>
-                                       <th>Password</th>
-                                       <th>Usertype</th>
+                                       <th>Subject Code</th>
+                                       <th>Subject Name</th>
+                                       <th>Time Offered</th>
+                                       <th>Day Available</th>
                                        <th>Action</th>
                                    </tr>
                                    </tfoot>
@@ -157,7 +71,7 @@
                                        <td>
                                            <!-- Trigger the modal with a button -->
                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Register</button>
-                                           <button class="btn btn-success" href="index.php">Edit</button>
+
                                            <!-- Modal -->
                                            <div id="myModal1" class="modal fade" role="dialog">
                                                <div class="modal-dialog">
@@ -170,22 +84,30 @@
 
                                                        </div>
                                                        <div class="modal-body">
-                                                          <form action="/action_page.php">
+                                                          <form action="" method="post">
                                                                   <div class="form-group">
-                                                                      <label for="name">Subject Code:</label>
+                                                                      <label for="scode">Subject Code:</label>
                                                                       <input type="text" class="form-control" id="scode" name="scode" required/>
                                                                   </div>
                                                                   <div class="form-group">
-                                                                      <label for="name">Subject Name:</label>
+                                                                      <label for="sname">Subject Name:</label>
                                                                       <input type="text" class="form-control" id="sname" name="sname" required/>
                                                                   </div>
                                                                    <div class="form-group">
-                                                                       <label for="email">Time:</label>
+                                                                       <label for="subtime">Time:</label>
                                                                        <input type="time" class="form-control" id="stime" name="stime"/>
                                                                    </div>
                                                                    <div class="form-group">
-                                                                       <label for="pwd">Day Available:</label>
-                                                                       <input type="day" class="form-control" id="pwd" name="pass"/>
+                                                                       <label for="Day">Day Available:</label>
+                                                                       <select name="dayavail" required class="form-control">
+                                                                           <option value=" "> </option>
+                                                                           <option value="Monday">Monday</option>
+                                                                           <option value="Tuesday">Tuesday</option>
+                                                                           <option value="Wednesday">Wednesday</option>
+                                                                           <option value="Thursday">Thursday</option>
+                                                                           <option value="Friday">Friday</option>
+                                                                           <option value="Saturday">Saturday</option>
+                                                                       </select>
                                                                    </div>
                                                                    <button type="submit" class="btn btn-success" name="addsubject">Submit</button>
                                                                </form>
@@ -200,12 +122,51 @@
 
                                        </td>
                                    </tr>
+                                   <?php
+                                   include "../conn.php";
+
+                                   $sql = "Select * from `subject`";
+                                   if ($result = mysqli_query($link, $sql)){
+                                   while($row = mysqli_fetch_array($result)){
+                                       echo "<tr>";
+                                       echo "<td>". $row['subid'] ."</td>";
+                                       echo "<td>". $row['subname'] ."</td>";
+                                       echo "<td>". $row['subtime'] ."</td>";
+                                       echo "<td>". $row['subday'] ."</td>";
+                                       echo "<td>";
+                                       echo " <button class='btn btn-success' href='report.php'>Edit</button>";
+                                       echo " <a class='btn btn-danger' href='../functions/deleteuser.php?id=echo ".$row['id'].";'>Delete</a>";
+                                       echo "</td>";
+                                       echo "</tr>";
+                                   }}
+                                   ?>
                                    </tbody>
                                </table>
                            </div>
                        </div>
                    </div>
                </div>
+              <?php
+
+                    if(isset($_POST['addsubject'])){
+                        $scode = $_POST['scode'];
+                        $sname = $_POST['sname'];
+                        $stime = $_POST['stime'];
+                        $dayavail = $_POST['dayavail'];
+
+                        $sql = "INSERT INTO `subject`(`subid`, `subname`, `subtime`, `subday`) VALUES ('$scode','$sname', '$stime','$dayavail')";
+
+                        if (mysqli_query($link, $sql)) {
+                            echo "<script> alert('Records Added Successfully')</script>";
+
+                            die();
+                        } else {
+                            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                            die();
+                        }
+                    }
+
+               ?>
                         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

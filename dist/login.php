@@ -1,3 +1,32 @@
+<?php
+include 'conn.php';
+session_start();
+if(isset($_POST['login'])){
+    $email = $_POST['email'];
+    $password = $_POST['pass'];
+    //check login details
+    $pass=md5($password);
+
+    //echo $stmt->rowCount();
+    //exit();
+    $s = "select * from student where email = '$email' and password = '$pass'";
+
+    $result = mysqli_query($link,$s);
+
+    $num = mysqli_num_rows($result);
+
+    if ($num == 1){
+        $_SESSION['email'] = $email;
+        header("location: student/index.php");
+        $_SESSION['success'] = "You are logged in";
+    }else{
+        header("location: login.php");
+        $_SESSION['error'] = "<div class='alert alert-danger' role='alert'><a class='close' data-dismiss='alert' aria-label='close'>&times;</a>Oh snap! Invalid login details.</div>";
+
+
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,12 +47,13 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Teacher Login</h3></div>
                                     <div class="card-body">
-                                        <form method="POST" action="functions/validation.php">
+                                        <?php if(isset($_SESSION['error'])){ echo $_SESSION['error']; }?>
+                                        <form method="POST" action="">
                                             <div class="form-group">
                                                 <label class="small mb-1">Username</label>
-                                                <input class="form-control py-4" type="name" name="uname" required minlength="8" placeholder="Enter Username" />
+                                                <input class="form-control py-4" type="email" name="email" required minlength="8" placeholder="Enter Username" />
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputPassword">Password</label>
@@ -33,11 +63,13 @@
                                                 
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <input type="submit" class="btn btn-primary btn-block" name="submit">
+                                                <input type="submit" class="btn btn-primary btn-block" name="login">
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center">
+                                        <div class="small"><a href="login.php">Login as Teacher</a></div>
+                                        <div class="small"><a href="student_login.php">Login as Student</a></div>
                                         <div class="small"><a href="forgotpass.php">Forgot Password?</a></div>
                                     </div>
                                 </div>
