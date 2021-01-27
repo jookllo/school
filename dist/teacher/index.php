@@ -31,7 +31,56 @@ if(isset($_SESSION['email'])){
                 <li class="breadcrumb-item active">Teachers Portal</li>
             </ol>
 <!-- Navbar-->
-
+            <div class="card">
+                <div class="card-header">
+                    Teacher Profile
+                </div>
+                <?php
+                include "../conn.php";
+                $sql = "SELECT * FROM teacher WHERE email = '" . $_SESSION['email'] . "'";
+                if($result =mysqli_query($link,$sql)){
+                while($row = mysqli_fetch_array($result)){
+                ?>
+                <div class="card-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-md-4 text-right">Teacher Name <span class="text-danger">*</span></label>
+                            <div class="col-md-8">
+                                <?php echo "<p>". $row['teach_name'] ."</p>";?>
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-md-4 text-right">Email <span class="text-danger">*</span></label>
+                            <div class="col-md-8">
+                                <?php echo "<p>". $row['email'] ."</p>";?>
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-md-4 text-right">D.O.B. <span class="text-danger">*</span></label>
+                            <div class="col-md-8">
+                                <?php echo "<p>". $row['dob'] ."</p>";?>
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-md-4 text-right">Subject ID <span class="text-danger">*</span></label>
+                            <div class="col-md-8">
+                                <?php echo "<p>". $row['subid'] ."</p>";?>
+                                <span class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                   <?php }}?>
+                </div>
+            </div>
             <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
             <script src="../js/scripts.js"></script>

@@ -32,10 +32,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-file-pdf"></i></div>
                         Attendance
                     </a>
-                    <a class="nav-link" href="unit_registration.php">
-                        <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
-                        Unit Registration
-                    </a>
+
                 </div>
             </div>
 

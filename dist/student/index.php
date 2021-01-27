@@ -36,17 +36,55 @@ if(isset($_SESSION['email'])){
             </div>
             <div class="card mb-4">
 
+                <div class="card">
                     <div class="card-header">
-                        <i class="fas fa-table mr-1"></i>
-                        Student Details
+                        Student Profile
                     </div>
+                    <?php
+                    include "../conn.php";
+                    $sql = "SELECT * FROM student WHERE email = '" . $_SESSION['email'] . "'";
+                    if($result =mysqli_query($link,$sql)){
+                    while($row = mysqli_fetch_array($result)){
+                    ?>
                     <div class="card-body">
-                        <div class="container">
-                                <p>Student Name:</p>
-                                <input class="form-control" name="pname" type="text"/><br>
-                                <p>Email:</p>
-                                <input class="form-control" name="quantity" type="number"/><br>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-md-4 text-right">Student Name <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <?php echo "<p>". $row['student_name'] ."</p>";?>
+                                    <span class="text-danger"></span>
+                                </div>
+                            </div>
                         </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-md-4 text-right">Email <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <?php echo "<p>". $row['email'] ."</p>";?>
+                                    <span class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-md-4 text-right">D.O.B. <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <?php echo "<p>". $row['dob'] ."</p>";?>
+                                    <span class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-md-4 text-right">Subject ID <span class="text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <?php echo "<p>". $row['subid'] ."</p>";?>
+                                    <span class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <?php }}?>
+                    </div>
                 </div>
             </div>
         </div>

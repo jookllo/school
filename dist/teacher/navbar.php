@@ -33,9 +33,9 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                         Students Registered
                     </a>
-                    <a class="nav-link" href="subject_report.php">
+                    <a class="nav-link" href="subject_attendance.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                        Subjects Reports
+                        Subject Attendance
                     </a>
                 </div>
             </div>

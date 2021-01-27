@@ -30,8 +30,65 @@ if(isset($_SESSION['email'])){
                 <li class="breadcrumb-item active">Student Registered</li>
             </ol>
             <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-table mr-1"></i>
+                    Students Registered
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Student Name</th>
+                                <th>Subject ID</th>
+                                <th>Subject Name</th>
 
+                            </tr>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Student Name</th>
+                                <th>Subject ID</th>
+                                <th>Subject Name</th>
+
+                            </tr>
+                            </tfoot>
+                            <tbody>
+
+                            <?php include '../conn.php';
+                            $sql = "select * from student inner join teacher
+                             on student.subid = teacher.subid INNER JOIN `subject` on subject.subid=teacher.subid where teacher.email ='".$_SESSION['email']."'";
+                            if($result =mysqli_query($link,$sql)){
+                                while($row = mysqli_fetch_array($result)){
+                                    echo "<tr>";
+                                    echo "<td>". $row['student_id']."</td>";
+                                    echo "<td>". $row['student_name'] ."</td>";
+                                    echo "<td>". $row['subid'] ."</td>";
+                                    echo "<td>". $row['subname'] ."</td>";
+                                    echo "</tr>";
+
+                                }}?>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
+                                        </div>
+                                    </div><br/>
+
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

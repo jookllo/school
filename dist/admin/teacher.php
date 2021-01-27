@@ -44,21 +44,21 @@ if(isset($_SESSION['uname'])){
                         <table class="table table-bordered" id="dataTable" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>First Name</th>
-                                <th>Last Name</th>
+                                <th>Teacher ID</th>
+                                <th>Teacher Name</th>
                                 <th>Email</th>
                                 <th>Date of Birth</th>
-                                <th>User Type</th>
+                                <th>Subject ID</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tfoot>
                             <tr>
-                                <th>First Name</th>
-                                <th>Last Name</th>
+                                <th>Teacher ID</th>
+                                <th>Teacher Name</th>
                                 <th>Email</th>
                                 <th>Date of Birth</th>
-                                <th>User Type</th>
+                                <th>Subject ID</th>
                                 <th>Action</th>
                             </tr>
                             </tfoot>
@@ -80,7 +80,7 @@ if(isset($_SESSION['uname'])){
                                             <!-- Modal content-->
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title">Add User</h4>
+                                                    <h4 class="modal-title">Add Teacher</h4>
                                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                                                 </div>

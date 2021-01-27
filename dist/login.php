@@ -47,7 +47,7 @@ if(isset($_POST['login'])){
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Teacher Login</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Student Login</h3></div>
                                     <div class="card-body">
                                         <?php if(isset($_SESSION['error'])){ echo $_SESSION['error']; }?>
                                         <form method="POST" action="">
@@ -68,8 +68,8 @@ if(isset($_POST['login'])){
                                         </form>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <div class="small"><a href="login.php">Login as Teacher</a></div>
-                                        <div class="small"><a href="student_login.php">Login as Student</a></div>
+                                        <div class="small"><a href="teacher_login.php">Login as Teacher</a></div>
+                                        <div class="small"><a href="login.php">Login as Student</a></div>
                                         <div class="small"><a href="forgotpass.php">Forgot Password?</a></div>
                                     </div>
                                 </div>
