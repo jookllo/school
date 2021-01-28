@@ -41,7 +41,7 @@ if(isset($_SESSION['uname'])){
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" cellspacing="0">
+                        <table class="table table-bordered" id="dataTableAdd" cellspacing="0">
                             <thead>
                             <tr>
                                 <th>Teacher ID</th>
@@ -142,8 +142,7 @@ if(isset($_SESSION['uname'])){
                                     echo "<td>". $row['dob'] ."</td>";
                                     echo "<td>". $row['subid'] ."</td>";
                                     echo "<td>";
-                                    echo " <button class='btn btn-success' href='report.php'>Edit</button>";
-                                    echo " <a class='btn btn-danger' href=''>Delete</a>";
+                                    echo " <button class='btn btn-success' data-toggle='modal' data-target='#editmodal'>Edit</button>";
                                     echo "</td>";
                                     echo "</tr>";
                                 }}
@@ -177,6 +176,86 @@ if(isset($_SESSION['uname'])){
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div id="editmodal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h4 class="modal-title">User Details</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <form action="../functions/editteacher.php" method="post">
+                            <div class="form-group">
+                                <label>Teacher Name:</label>
+                                <input type="text" class="form-control" name="tname" id ="tnames" required/></div>
+                            <div class="form-group">
+                                <label>Email:</label>
+                                <input type="email" class="form-control" name="email" id="emaile" required/></div>
+                            <div class="form-group">
+                                <label>Date of Birth:</label>
+                                <input type="date" class="form-control" name="dob" id="dobe" required/></div>
+                            <div class="form-group">
+                                <label>Subject ID:</label>
+                                <?php
+                                include "../conn.php";
+                                $sql = "select `subid`,`subname` from `subject`";
+
+                                echo "<select name='subid' id='subide' class='form-control' required>";
+                                echo "<option value=' '></option>";
+                                if($result =mysqli_query($link,$sql)){
+                                    while($row = mysqli_fetch_array($result)){
+                                        $subid = $row['subid'];
+                                        echo "<option value='$subid'>".$row['subname']."</option>"; }}
+                                echo "</select>"?> </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-success" value="Update"  name="Update" id="Update"/>
+                                <input type="submit" class="btn btn-danger" value="Delete"  name="Delete" id="Delete"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+    //add event listener to table rows
+    let thetable = document.getElementById('dataTableAdd').getElementsByTagName('tbody')[0];
+    for (let i = 0; i < thetable.rows.length; i++)
+    {
+        thetable.rows[i].onclick = function()
+        {
+            TableRowClick(this);
+        };
+    }
+
+    function TableRowClick(therow) {
+        var tname = therow.cells[1].innerHTML
+        var email = therow.cells[2].innerHTML
+        var dobe = therow.cells[3].innerHTML
+        var subide=therow.cells[4].innerHTML
+
+
+        document.getElementById("tnames").value = tname;
+        document.getElementById("emaile").value = email;
+        document.getElementById("dobe").value = dobe;
+        document.getElementById("subide").value = subide;
+    };
+
+
+
+</script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="../js/scripts.js"></script>

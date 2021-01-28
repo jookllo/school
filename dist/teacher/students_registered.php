@@ -47,6 +47,7 @@ if(isset($_SESSION['email'])){
                                 <th>Subject ID</th>
                                 <th>Subject Name</th>
 
+
                             </tr>
                             </thead>
                             <tfoot>
@@ -55,6 +56,7 @@ if(isset($_SESSION['email'])){
                                 <th>Student Name</th>
                                 <th>Subject ID</th>
                                 <th>Subject Name</th>
+
 
                             </tr>
                             </tfoot>
@@ -88,6 +90,7 @@ if(isset($_SESSION['email'])){
 
                             </tbody>
                         </table>
+
                     </div>
                 </div>
             </div>

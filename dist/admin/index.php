@@ -43,7 +43,7 @@ if(isset($_SESSION['uname'])){
                        </div>
                        <div class="card-body">
                            <div class="table-responsive">
-                               <table class="table table-bordered" id="dataTable" cellspacing="0">
+                               <table class="table table-bordered" id="dataTableAdd" cellspacing="0">
                                    <thead>
                                    <tr>
                                        <th>Subject Code</th>
@@ -87,7 +87,7 @@ if(isset($_SESSION['uname'])){
                                                           <form action="" method="post">
                                                                   <div class="form-group">
                                                                       <label for="scode">Subject Code:</label>
-                                                                      <input type="text" class="form-control" id="scode" name="scode" required/>
+                                                                      <input type="text" min="1000" class="form-control" id="scode" name="scode" required/>
                                                                   </div>
                                                                   <div class="form-group">
                                                                       <label for="sname">Subject Name:</label>
@@ -134,9 +134,7 @@ if(isset($_SESSION['uname'])){
                                        echo "<td>". $row['subtime'] ."</td>";
                                        echo "<td>". $row['subday'] ."</td>";
                                        echo "<td>";
-                                       echo " <button class='btn btn-success' href='report.php'>Edit</button>";
-                                       echo " <a class='btn btn-danger' href='../functions/deleteuser.php?id=echo ".$row['id'].";'>Delete</a>";
-                                       echo "</td>";
+                                       echo " <button class='btn btn-success' data-toggle='modal' data-target='#editmodal'>Edit</button>";
                                        echo "</tr>";
                                    }}
                                    ?>
@@ -168,6 +166,84 @@ if(isset($_SESSION['uname'])){
 
                ?>
                         </div>
+       <!-- Modal -->
+       <div id="editmodal" class="modal fade" role="dialog">
+           <div class="modal-dialog">
+
+               <!-- Modal content-->
+               <div class="modal-content">
+                   <div class="modal-header">
+
+                       <h4 class="modal-title">User Details</h4>
+                   </div>
+                   <div class="modal-body">
+
+                       <form action="../functions/editsub.php" method="post">
+                           <div class="form-group">
+                               <label>Subject Code:</label>
+                               <input type="text" class="form-control" name="scode" id ="scodes1" required/></div>
+                           <div class="form-group">
+                               <label>Subject Name:</label>
+                               <input type="text" class="form-control" name="sname" id="snames1" required/></div>
+                           <div class="form-group">
+                               <label>Time Offered:</label>
+                               <input type="time" class="form-control" name="times" id="stimes1" required/></div>
+                           <div class="form-group">
+                               <label>Day Available:</label>
+                               <select name="dayavail" id="dayavaila1" required class="form-control">
+                                   <option value=" "> </option>
+                                   <option value="Monday">Monday</option>
+                                   <option value="Tuesday">Tuesday</option>
+                                   <option value="Wednesday">Wednesday</option>
+                                   <option value="Thursday">Thursday</option>
+                                   <option value="Friday">Friday</option>
+                                   <option value="Saturday">Saturday</option>
+                               </select> </div>
+
+                           <div class="form-group">
+                               <input type="submit" class="btn btn-success" value="Update"  name="Update" id="Update"/>
+                               <input type="submit" class="btn btn-danger" value="Delete"  name="Delete" id="Delete"/>
+                           </div>
+                       </form>
+                   </div>
+                   <div class="modal-footer">
+                       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
+       <script>
+
+           //add event listener to table rows
+           let thetable = document.getElementById('dataTableAdd').getElementsByTagName('tbody')[0];
+           for (let i = 0; i < thetable.rows.length; i++)
+           {
+               thetable.rows[i].onclick = function()
+               {
+                   TableRowClick(this);
+               };
+           }
+
+           function TableRowClick(therow) {
+               var scodes = therow.cells[0].innerHTML
+               var sname = therow.cells[1].innerHTML
+               var stimes = therow.cells[2].innerHTML
+               var sday=therow.cells[3].innerHTML
+
+
+               document.getElementById("scodes1").value = scodes;
+               document.getElementById("snames1").value = sname;
+               document.getElementById("stimes1").value = stimes;
+               document.getElementById("dayavaila1").value = sday;
+           };
+
+
+
+       </script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="../js/scripts.js"></script>

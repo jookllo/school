@@ -24,10 +24,10 @@ if(isset($_SESSION['email'])){
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid">
-            <h1 class="mt-4">Orders</h1>
+            <h1 class="mt-4">Attendance</h1>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item"><a href="../admin/index.php">Dashboard</a></li>
-                <li class="breadcrumb-item active">Orders</li>
+                <li class="breadcrumb-item active">Attendance</li>
             </ol>
             <div class="card mb-4">
 
@@ -36,6 +36,9 @@ if(isset($_SESSION['email'])){
                 <div class="card-header">
                     <i class="fas fa-table mr-1"></i>
                     Subject Attendance
+                    <form method="post" action="export_attendance.php">
+                        <input type="submit" class="btn btn-success" value="Export to Excel" style="float: right;" name="export">
+                    </form>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -57,16 +60,16 @@ if(isset($_SESSION['email'])){
                             </tr>
                             </tfoot>
                             <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-
-                                <td>
-
-
-                                </td>
-                            </tr>
+                             <?php include '../conn.php';
+                            $sql = "select * from attendance inner join student on attendance.student_id = student.student_id where student.email = '".$_SESSION['email']."'";
+                             if($result =mysqli_query($link,$sql)){
+                                 while($row = mysqli_fetch_array($result)){
+                            echo "<tr>";
+                            echo "<td>".$row['subid']."</td>";
+                            echo "<td>".$row['attend_date']."</td>";
+                            echo "<td>".$row['student_name']."</td>";
+                            echo "<td>".$row['attended']."</td>";
+                            echo "</tr>";}}?>
                             </tbody>
                         </table>
                     </div>

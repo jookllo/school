@@ -33,6 +33,10 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
                         Students Registered
                     </a>
+                    <a class="nav-link" href="students_register.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-book"></i></div>
+                        Class Register
+                    </a>
                     <a class="nav-link" href="subject_attendance.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
                         Subject Attendance

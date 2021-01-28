@@ -36,9 +36,9 @@ if(isset($_SESSION['email'])){
                     <i class="fas fa-table mr-1"></i>
                     Students Registered
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" style="float: right" data-target="#exampleModal">
-                        Add Attendance
-                    </button>
+                    <form method="post" action="export_studentattendance.php">
+                        <input type="submit" class="btn btn-success" value="Export to Excel" style="float: right;" name="export">
+                    </form>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -49,7 +49,6 @@ if(isset($_SESSION['email'])){
                                 <th>Student ID</th>
                                 <th>Student Name</th>
                                 <th>Subject ID</th>
-                                <th>Subject Name</th>
                                 <th>Attendance Status</th>
                                 <th>Attendance Date</th>
 
@@ -60,7 +59,6 @@ if(isset($_SESSION['email'])){
                                 <th>Student ID</th>
                                 <th>Student Name</th>
                                 <th>Subject ID</th>
-                                <th>Subject Name</th>
                                 <th>Attendance Status</th>
                                 <th>Attendance Date</th>
 
@@ -69,20 +67,29 @@ if(isset($_SESSION['email'])){
                             <tbody>
 
                             <?php include '../conn.php';
-                            $sql = "select * from student inner join teacher
-                             on student.subid = teacher.subid INNER JOIN `subject` on subject.subid=teacher.subid where teacher.email ='".$_SESSION['email']."'";
+                            $sql = "select * from attendance inner join teacher
+                             on attendance.subid = teacher.subid where teacher.email ='".$_SESSION['email']."'";
                             if($result =mysqli_query($link,$sql)){
+
                                 while($row = mysqli_fetch_array($result)){
+                                    $student_id = $row['student_id'];
+                                    $student_name =$row['student_name'];
+                                    $subid = $row['subid'];
+
+                                    $attended = $row['attended'];
+                                    $adate = $row['attend_date'];
                                     echo "<tr>";
-                                    echo "<td>". $row['student_id']."</td>";
-                                    echo "<td>". $row['student_name'] ."</td>";
-                                    echo "<td>". $row['subid'] ."</td>";
-                                    echo "<td>". $row['subname'] ."</td>";
-                                    echo "<td></td>";
-                                    echo "<td></td>";
+                                    echo "<td>". $student_id."</td>";
+                                    echo "<td>". $student_name ."</td>";
+
+                                    echo "<td>". $subid ."</td>";
+                                    echo "<td>".$adate."</td>";
+                                    echo "<td>".$attended."</td>";
                                     echo "</tr>";
 
-                                }}?>
+                                }}
+
+                            ?>
 
 
                             </tbody>
@@ -101,7 +108,8 @@ if(isset($_SESSION['email'])){
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Attendance Date: <input class="form-control-sm" type="date"/></p>
+                            <form method="post" action="">
+                            <p>Attendance Date: <input class="form-control-sm" name="attenddate" type="date"/></p>
                             <table class="table">
                                 <thead>
                                 <tr>
@@ -114,43 +122,62 @@ if(isset($_SESSION['email'])){
                                 </thead>
                                 <tbody>
                                 <?php include '../conn.php';
-                                $sql = "select * from student inner join teacher
-                             on student.subid = teacher.subid INNER JOIN `subject` on subject.subid=teacher.subid where teacher.email ='".$_SESSION['email']."'";
+                                $sql = "select * from attendance inner join teacher
+                             on student.subid = teacher.subid where teacher.email ='".$_SESSION['email']."'";
                                 if($result =mysqli_query($link,$sql)){
 
                                     while($row = mysqli_fetch_array($result)){
-
+                                        $student_id = $row['student_id'];
+                                        $student_name =$row['student_name'];
+                                        $subid = $row['subid'];
+                                        $attended = $row['attended'];
+                                        $adate = $row['attend_date'];
                                         echo "<tr>";
-                                        echo "<td value>". $row['student_id']."</td>";
-                                        echo "<td>". $row['student_name'] ."</td>";
-                                        echo "<td>". $row['subid'] ."</td>";
-
-                                        echo "<td>
-                                            <select name='attendance' class='form-control' required>
-                                                <option value='Present'>Present</option>
-                                               <option value='Absent'>Absent</option>                     
-                                            </select></td>";
-                                        echo "<td></td>";
+                                        echo "<td>". $student_id."</td>";
+                                        echo "<td>". $student_name ."</td>";
+                                        echo "<td>". $subid ."</td>";
+                                        echo "<td>".$adate."</td>";
+                                        echo "<td>".$attended."</td>";
                                         echo "</tr>";
 
                                     }}
-                                if(isset($_POST['addattendance'])){
 
-                                }
                                 ?>
 
-                                </tbody>
-                            </table>
 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" name="">Save changes</button>
+                            <button type="submit" class="btn btn-primary" name="addattendance">Save changes</button>
                         </div>
+                        </form>
+                        </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
+                <?php
+                if(isset($_POST['addatendance'])){
+                    $attenddate= $_POST['attenddate'];
+                    $attend = $_POST['classattendance'];
+                    $student_id = $_POST['stuid'];
+                    $student_name =$_POST['stuname'];
+                    $subid = $_POST['subid1'];
 
+                    $sql = "INSERT INTO `attendance`(`student_id`, `student_name`, `subid`, `attended`, `attend_date`) VALUES 
+                           ('$student_id','$student_name', '$subid','$attend','$attenddate')";
+
+                        if (mysqli_query($link, $sql)) {
+                            echo "<script> alert('Records Added Successfully')</script>";
+
+                            die();
+                        } else {
+                            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                            die();
+                        }
+                    }
+
+                ?>
             <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
             <script src="../js/scripts.js"></script>
